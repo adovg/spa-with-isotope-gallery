@@ -1,0 +1,68 @@
+.testimonials {
+  background: #f3f3f3;
+  &__title {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: rem(36px);
+    color: $black;
+  }
+  &__text {
+    text-align: center;
+    color: #81858c;
+    line-height: rem(26px);
+    font-weight: 300;
+  }
+  &__content {
+    max-width: rem(400px);
+    margin: auto;
+  }
+  &__people_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-bottom: rem(30px);
+  }
+  &__people {
+    background: $white;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    margin-bottom: rem(32px);
+  }
+}
+
+.people {
+  &__position {
+    color: #484848;
+    font-size: rem(14px);
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
+  &__photo {
+    max-width: 130px;
+    height: 130px;
+    background: url(../i/Layer-439.jpg) no-repeat;
+    background-size: cover;
+    margin: 0 auto 32px;
+  }
+  &__content {
+    max-width: 770px;
+    line-height: rem(24px);
+  }
+  &__comment {
+    color: #81858c;
+    font-weight: 300;
+    margin-bottom: rem(14px);
+    text-align: center;
+  }
+  &__name {
+    margin: 0;
+    color: #6cbc9a;
+    font-weight: 700;
+    text-align: center;
+  }
+}

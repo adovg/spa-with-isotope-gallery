@@ -1,0 +1,102 @@
+.team {
+  &__content {
+    max-width: rem(400px);
+    margin: auto;
+  }
+  &__title {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: rem(36px);
+    color: $black;
+  }
+  &__text {
+    text-align: center;
+    color: #81858c;
+    line-height: rem(26px);
+    font-weight: 300;
+  }
+  &__slider {
+    margin: auto;
+    max-width: rem(1030px);
+  }
+  &__member {
+    margin-bottom: rem(20px);
+    padding: 0 1rem;
+  }
+}
+
+.member {
+  &__photo {
+    max-width: rem(400px);
+    height: rem(364px);
+    background: url(../i/photo_man.jpg) no-repeat;
+    background-size: cover;
+    margin: 20px auto;
+  }
+  &__content {
+    max-width: rem(400px);
+    position: relative;
+    margin: 20px auto;
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: rem(3px);
+      height: rem(56px);
+      background: #6cbc9a;
+      top: 0px;
+      left: 50%;
+      border-radius: rem(4px);
+      transform: rotate(90deg);
+    }
+  }
+  &__name {
+    text-align: center;
+    font-size: rem(20px);
+    font-weight: 400;
+    margin-bottom: rem(10px);
+  }
+  &__position {
+    font-size: rem(14px);
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: rem(18px);
+    text-transform: uppercase;
+    color: #81858c;
+  }
+  &__about {
+    font-size: rem(13px);
+    font-weight: 300;
+    line-height: rem(22px);
+    text-align: center;
+    color: #81858c;
+  }
+}
+
+.slider__nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.slider__nav button {
+  outline: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6cbc9a;
+  border-radius: 20px;
+  background: none;
+  text-indent: -9999px;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.slider__nav li.slick-active button {
+  background: #6cbc9a;
+}

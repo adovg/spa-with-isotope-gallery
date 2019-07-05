@@ -1,0 +1,29 @@
+.cta {
+  background: url(../i/Black-&-White-4.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  &__title {
+    font-size: rem(20px);
+    text-align: center;
+    font-weight: 300;
+    color: $white;
+    margin: 56px 0 24px;
+  }
+  &__btn {
+    margin: 0 auto 56px;
+    display: block;
+    padding: 14px 30px;
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    border: 1px solid $white;
+    border-radius: rem(30px);
+    background: none;
+    cursor: pointer;
+    outline: 0;
+    &:hover {
+      background: $white;
+      color: $black;
+    }
+  }
+}
